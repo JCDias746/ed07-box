@@ -491,6 +491,7 @@ footer { background: var(--black); border-top: 1px solid var(--grey2); padding: 
   .pricing-table { font-size: 13px; }
   .pricing-table td, .pricing-table th { padding: 12px; }
 }
+
 </style>
 </head>
 <body>
@@ -952,7 +953,7 @@ footer { background: var(--black); border-top: 1px solid var(--grey2); padding: 
       <div class="form-row"><label>Brand / Company name</label><input type="text" placeholder="Your brand name"></div>
       <div class="form-row"><label>Contact email</label><input type="email" placeholder="your@brand.com"></div>
       <div class="form-row"><label>Message</label><textarea placeholder="What you have in mind..."></textarea></div>
-      <button class="brands-submit" onclick="handleBrandSubmit(this)">Send Enquiry →</button>
+      <button class="brands-submit" onclick="handleBrandEnquiry(this)">Send Enquiry →</button>
     </div>
   </div>
 </section>
@@ -965,10 +966,10 @@ footer { background: var(--black); border-top: 1px solid var(--grey2); padding: 
       <h2 class="section-h2">Ready to join<br>the <em>crew?</em></h2>
       <p>Choose your box and subscribe via Gumroad — secure monthly payment, cancel any time. First box ships within 7 days.</p>
       <div class="contact-info">
-        📧 <a href="mailto:jeand746@gmail.com">jeand746@gmail.com</a><br>
         🌐 <a href="https://www.ed07.com">www.ed07.com</a><br>
         📱 <a href="https://instagram.com/enriquedias07thunderlap">@enriquedias07thunderlap</a><br>
-        📚 Book: <span style="color:var(--muted)">Coming Soon on Amazon UK</span>
+        📚 Book: <span style="color:var(--muted)">Coming Soon on Amazon UK</span><br>
+        💬 Questions? DM us on Instagram
       </div>
     </div>
     <div>
@@ -1034,11 +1035,26 @@ const io = new IntersectionObserver(entries => {
 }, { threshold: 0.06 });
 document.querySelectorAll('.rev').forEach(el => io.observe(el));
 
-function handleBrandSubmit(btn) {
-  btn.textContent = "✓ Message sent. We'll be in touch within 48h.";
+function handleBrandEnquiry(btn) {
+  const form = btn.closest('.brands-cta');
+  const brand = form.querySelector('input[type="text"]').value.trim();
+  const email = form.querySelector('input[type="email"]').value.trim();
+  const msg = form.querySelector('textarea').value.trim();
+  if (!brand || !email) {
+    alert('Please fill in your brand name and email.');
+    return;
+  }
+  const subject = encodeURIComponent('ED07 Box — Brand Enquiry from ' + brand);
+  const body = encodeURIComponent('Brand: ' + brand + '\nEmail: ' + email + '\n\nMessage:\n' + msg);
+  window.location.href = 'mailto:jeand746@gmail.com?subject=' + subject + '&body=' + body;
+  btn.textContent = "✓ Opening your email app...";
   btn.style.background = 'var(--green)';
   btn.style.color = 'var(--black)';
   btn.disabled = true;
+}
+
+function handleBrandSubmit(btn) {
+  handleBrandEnquiry(btn);
 }
 </script>
 </body>
