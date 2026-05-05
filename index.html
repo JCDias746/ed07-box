@@ -1237,18 +1237,6 @@ document.addEventListener('DOMContentLoaded', () => {
     carouselRender(id);
   });
 });
-  const dotsEl = document.getElementById('dots-' + id.replace('carousel-', ''));
-  if (dotsEl) dotsEl.querySelectorAll('.carousel-dot').forEach((d, i) => {
-    d.classList.toggle('active', i === idx);
-  });
-}
-// Init all carousels on load
-document.addEventListener('DOMContentLoaded', () => {
-  ['carousel-kids','carousel-teens','carousel-desk'].forEach(id => {
-    carouselInit(id);
-    carouselRender(id, 2);
-  });
-});
 
 </script>
 </body>
