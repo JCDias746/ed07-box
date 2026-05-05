@@ -837,20 +837,13 @@ footer { background: var(--black); border-top: 1px solid var(--grey2); padding: 
               <img src="assets/kids-2.jpg" alt="Pit Stop Box — Design 2" class="carousel-img">
             </div>
           </div>
-          <div class="carousel-slide">
-            <div class="carousel-img-wrap">
-              <video class="carousel-img" autoplay muted loop playsinline>
-                <source src="assets/kids-video.mp4" type="video/mp4">
-              </video>
-            </div>
-          </div>
+
         </div>
         <div class="carousel-controls">
           <button class="carousel-btn prev" onclick="carouselMove('carousel-kids', -1)">&#8592;</button>
           <div class="carousel-dots" id="dots-kids">
             <span class="carousel-dot active" onclick="carouselGo('carousel-kids',0)"></span>
             <span class="carousel-dot" onclick="carouselGo('carousel-kids',1)"></span>
-            <span class="carousel-dot" onclick="carouselGo('carousel-kids',2)"></span>
           </div>
           <button class="carousel-btn next" onclick="carouselMove('carousel-kids', 1)">&#8594;</button>
         </div>
@@ -874,20 +867,13 @@ footer { background: var(--black); border-top: 1px solid var(--grey2); padding: 
               <img src="assets/teens-2.jpg" alt="Race Crew Box — Design 2" class="carousel-img">
             </div>
           </div>
-          <div class="carousel-slide">
-            <div class="carousel-img-wrap">
-              <video class="carousel-img" autoplay muted loop playsinline>
-                <source src="assets/teens-video.mp4" type="video/mp4">
-              </video>
-            </div>
-          </div>
+
         </div>
         <div class="carousel-controls">
           <button class="carousel-btn prev" onclick="carouselMove('carousel-teens', -1)">&#8592;</button>
           <div class="carousel-dots" id="dots-teens">
             <span class="carousel-dot active" onclick="carouselGo('carousel-teens',0)"></span>
             <span class="carousel-dot" onclick="carouselGo('carousel-teens',1)"></span>
-            <span class="carousel-dot" onclick="carouselGo('carousel-teens',2)"></span>
           </div>
           <button class="carousel-btn next" onclick="carouselMove('carousel-teens', 1)">&#8594;</button>
         </div>
@@ -911,20 +897,13 @@ footer { background: var(--black); border-top: 1px solid var(--grey2); padding: 
               <img src="assets/desk-2.jpg" alt="Desk Crew Box — Design 2" class="carousel-img">
             </div>
           </div>
-          <div class="carousel-slide">
-            <div class="carousel-img-wrap">
-              <video class="carousel-img" autoplay muted loop playsinline>
-                <source src="assets/desk-video.mp4" type="video/mp4">
-              </video>
-            </div>
-          </div>
+
         </div>
         <div class="carousel-controls">
           <button class="carousel-btn prev" onclick="carouselMove('carousel-desk', -1)">&#8592;</button>
           <div class="carousel-dots" id="dots-desk">
             <span class="carousel-dot active" onclick="carouselGo('carousel-desk',0)"></span>
             <span class="carousel-dot" onclick="carouselGo('carousel-desk',1)"></span>
-            <span class="carousel-dot" onclick="carouselGo('carousel-desk',2)"></span>
           </div>
           <button class="carousel-btn next" onclick="carouselMove('carousel-desk', 1)">&#8594;</button>
         </div>
@@ -1259,7 +1238,7 @@ function carouselRender(id, total) {
 document.addEventListener('DOMContentLoaded', () => {
   ['carousel-kids','carousel-teens','carousel-desk'].forEach(id => {
     carouselInit(id);
-    carouselRender(id, 3);
+    carouselRender(id, 2);
   });
 });
 
