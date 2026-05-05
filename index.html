@@ -468,7 +468,7 @@ footer { background: var(--black); border-top: 1px solid var(--grey2); padding: 
   gap: 2px;
   margin-bottom: 40px;
 }
-.monthly-box-col { background: var(--grey1); }
+.monthly-box-col { background: var(--grey1); overflow: hidden; }
 .monthly-box-label {
   padding: 16px 20px 0;
 }
@@ -480,7 +480,8 @@ footer { background: var(--black); border-top: 1px solid var(--grey2); padding: 
   color: var(--green);
 }
 .monthly-carousel {
-  padding: 12px 0 16px;
+  padding: 0;
+  width: 100%;
 }
 .carousel-track {
   display: flex;
@@ -493,15 +494,14 @@ footer { background: var(--black); border-top: 1px solid var(--grey2); padding: 
 }
 .carousel-img-wrap {
   width: 100%;
-  height: 420px;
+  height: 320px;
   background: #1a1a1a;
   overflow: hidden;
 }
 .carousel-img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center;
+  object-fit: contain;
   display: block;
 }
 .carousel-placeholder {
