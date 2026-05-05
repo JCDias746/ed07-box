@@ -460,6 +460,114 @@ footer { background: var(--black); border-top: 1px solid var(--grey2); padding: 
 .foot-links a:hover { color: var(--green); }
 .foot-copy { width: 100%; font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.15em; color: rgba(240,237,230,0.18); text-transform: uppercase; }
 
+
+/* MONTHLY BOXES + CAROUSEL */
+.monthly-boxes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  margin-bottom: 40px;
+}
+.monthly-box-col { background: var(--grey1); }
+.monthly-box-label {
+  padding: 16px 20px 0;
+}
+.monthly-box-tag {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--green);
+}
+.monthly-carousel {
+  padding: 12px 0 16px;
+}
+.carousel-track {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+.carousel-slide {
+  min-width: 100%;
+  transition: transform 0.4s ease;
+}
+.carousel-img-wrap {
+  width: 100%;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  background: var(--grey2);
+  position: relative;
+}
+.carousel-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.carousel-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  gap: 8px;
+  color: rgba(240,237,230,0.2);
+  background: var(--grey2);
+  min-height: 220px;
+}
+.carousel-placeholder span {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+.carousel-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 12px 0 4px;
+}
+.carousel-btn {
+  background: none;
+  border: 1px solid rgba(240,237,230,0.15);
+  color: var(--white);
+  width: 28px;
+  height: 28px;
+  font-size: 14px;
+  cursor: none !important;
+  transition: border-color .2s, color .2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+.carousel-btn:hover {
+  border-color: var(--green);
+  color: var(--green);
+}
+.carousel-dots {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+.carousel-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(240,237,230,0.2);
+  cursor: none !important;
+  transition: background .2s;
+}
+.carousel-dot.active {
+  background: var(--green);
+}
+@media (max-width: 900px) {
+  .monthly-boxes-grid { grid-template-columns: 1fr; }
+}
+
 /* REVEAL */
 .rev { opacity: 0; transform: translateY(28px); transition: opacity .7s, transform .7s; }
 .rev.in { opacity: 1; transform: translateY(0); }
@@ -537,7 +645,7 @@ footer { background: var(--black); border-top: 1px solid var(--grey2); padding: 
   <div class="hero-bottom">
     <div class="hero-stat"><span class="num">9</span><span class="label">Years Old</span></div>
     <div class="hero-stat"><span class="num">3</span><span class="label">Toys per box</span></div>
-    <div class="hero-stat"><span class="num">4</span><span class="label">Colours per print</span></div>
+    <div class="hero-stat"><span class="num">UK</span><span class="label">Delivery</span></div>
     <div class="hero-stat"><span class="num">F1</span><span class="label">The destination</span></div>
   </div>
 </section>
@@ -549,7 +657,7 @@ footer { background: var(--black); border-top: 1px solid var(--grey2); padding: 
     <span class="ticker-item">3D Printed by Enrique <span class="ticker-sep">●</span></span>
     <span class="ticker-item">New Surprise Every Month <span class="ticker-sep">●</span></span>
     <span class="ticker-item">Bambu P1S <span class="ticker-sep">●</span></span>
-    <span class="ticker-item">4 Colours Per Print <span class="ticker-sep">●</span></span>
+    <span class="ticker-item">Colourful Prints <span class="ticker-sep">●</span></span>
     <span class="ticker-item">Funding Cadet 200 Racing <span class="ticker-sep">●</span></span>
     <span class="ticker-item">UK Delivery <span class="ticker-sep">●</span></span>
     <span class="ticker-item">The Road to F1 <span class="ticker-sep">●</span></span>
@@ -558,7 +666,7 @@ footer { background: var(--black); border-top: 1px solid var(--grey2); padding: 
     <span class="ticker-item">3D Printed by Enrique <span class="ticker-sep">●</span></span>
     <span class="ticker-item">New Surprise Every Month <span class="ticker-sep">●</span></span>
     <span class="ticker-item">Bambu P1S <span class="ticker-sep">●</span></span>
-    <span class="ticker-item">4 Colours Per Print <span class="ticker-sep">●</span></span>
+    <span class="ticker-item">Colourful Prints <span class="ticker-sep">●</span></span>
     <span class="ticker-item">Funding Cadet 200 Racing <span class="ticker-sep">●</span></span>
     <span class="ticker-item">UK Delivery <span class="ticker-sep">●</span></span>
     <span class="ticker-item">The Road to F1 <span class="ticker-sep">●</span></span>
@@ -611,7 +719,7 @@ footer { background: var(--black); border-top: 1px solid var(--grey2); padding: 
         <div class="box-badge">Most Popular</div>
         <p class="box-age">Ages 11–14 · Teens</p>
         <div class="box-name">Race Crew Box</div>
-        <div class="box-price">£19<span>.99 /mo</span></div>
+        <div class="box-price">£14<span>.99 /mo</span></div>
         <p class="box-tagline">Every penny above costs funds Enrique's racing</p>
       </div>
       <div class="box-body">
@@ -623,8 +731,8 @@ footer { background: var(--black); border-top: 1px solid var(--grey2); padding: 
         </ul>
         <div class="box-surprise"><strong>Always a surprise.</strong> Designs rotate every month — you'll never know what's coming until you open the box.</div>
         <div class="box-btns">
-          <a href="https://jeandrift.gumroad.com/l/race-crew-box" target="_blank" class="box-btn subscribe">Subscribe<span>£19.99 / month</span></a>
-          <a href="https://jeandrift.gumroad.com/l/race-crew-gift-box" target="_blank" class="box-btn gift">Gift Once<span>£26.99 one-time</span></a>
+          <a href="https://jeandrift.gumroad.com/l/race-crew-box" target="_blank" class="box-btn subscribe">Subscribe<span>£14.99 / month</span></a>
+          <a href="https://jeandrift.gumroad.com/l/race-crew-gift-box" target="_blank" class="box-btn gift">Gift Once<span>£19.99 one-time</span></a>
         </div>
       </div>
     </div>
@@ -633,7 +741,7 @@ footer { background: var(--black); border-top: 1px solid var(--grey2); padding: 
       <div class="box-header">
         <p class="box-age">Adults · Desk & Office</p>
         <div class="box-name">Desk Crew Box</div>
-        <div class="box-price">£24<span>.99 /mo</span></div>
+        <div class="box-price">£14<span>.99 /mo</span></div>
         <p class="box-tagline">Every penny above costs funds Enrique's racing</p>
       </div>
       <div class="box-body">
@@ -645,8 +753,8 @@ footer { background: var(--black); border-top: 1px solid var(--grey2); padding: 
         </ul>
         <div class="box-surprise"><strong>Always a surprise.</strong> Articulated creatures, kinetic pieces, geometric builds — curated for adults.</div>
         <div class="box-btns">
-          <a href="https://jeandrift.gumroad.com/l/desk-crew-box" target="_blank" class="box-btn subscribe">Subscribe<span>£24.99 / month</span></a>
-          <a href="https://jeandrift.gumroad.com/l/desk-crew-gift-box" target="_blank" class="box-btn gift">Gift Once<span>£32.99 one-time</span></a>
+          <a href="https://jeandrift.gumroad.com/l/desk-crew-box" target="_blank" class="box-btn subscribe">Subscribe<span>£14.99 / month</span></a>
+          <a href="https://jeandrift.gumroad.com/l/desk-crew-gift-box" target="_blank" class="box-btn gift">Gift Once<span>£19.99 one-time</span></a>
         </div>
       </div>
     </div>
@@ -681,8 +789,8 @@ footer { background: var(--black); border-top: 1px solid var(--grey2); padding: 
             <span class="gc-age">Ages 11–14 · Teens · One-time</span>
           </div>
           <div class="gc-prices">
-            <span class="gc-price-gift">£26.99</span>
-            <span class="gc-price-sub">£19.99/mo if subscribed</span>
+            <span class="gc-price-gift">£19.99</span>
+            <span class="gc-price-sub">£14.99/mo if subscribed</span>
           </div>
         </a>
         <a href="https://jeandrift.gumroad.com/l/desk-crew-gift-box" target="_blank" class="gift-card">
@@ -691,8 +799,8 @@ footer { background: var(--black); border-top: 1px solid var(--grey2); padding: 
             <span class="gc-age">Adults · Desk & Office · One-time</span>
           </div>
           <div class="gc-prices">
-            <span class="gc-price-gift">£32.99</span>
-            <span class="gc-price-sub">£24.99/mo if subscribed</span>
+            <span class="gc-price-gift">£19.99</span>
+            <span class="gc-price-sub">£14.99/mo if subscribed</span>
           </div>
         </a>
       </div>
@@ -704,70 +812,126 @@ footer { background: var(--black); border-top: 1px solid var(--grey2); padding: 
   </div>
 </section>
 
-<!-- PAST BOXES -->
+<!-- THIS MONTH'S BOXES -->
 <section class="past-boxes rev" id="past">
-  <p class="label">What's already shipped</p>
-  <h2 class="section-h2">Past boxes.<br><em>Real prints.</em></h2>
-  <div class="past-grid">
+  <p class="label">What's inside this month</p>
+  <h2 class="section-h2">This month's<br><em>boxes.</em></h2>
 
-    <div class="past-card">
-      <div class="past-card-img">
-        <div class="past-card-img-placeholder">🖨️</div>
-        <div class="past-card-img-text">Photo coming soon</div>
-        <div class="past-coming-soon"><span>First box ships soon</span></div>
+  <div class="monthly-boxes-grid">
+
+    <!-- BOX: PIT STOP -->
+    <div class="monthly-box-col">
+      <div class="monthly-box-label">
+        <span class="monthly-box-tag">Pit Stop Box · Ages 6–10</span>
       </div>
-      <div class="past-card-body">
-        <p class="past-month">Box 001 · April 2026</p>
-        <h3>The Launch Box</h3>
-        <p>The first ED07 Box ever shipped. Three multicolour prints, Enrique's first note to subscribers, and the opening race update of the 2026 season.</p>
-        <ul class="past-items">
-          <li>3 multicolour 3D-printed fidget toys</li>
-          <li>Handwritten note — "Why I started this"</li>
-          <li>Race update — 2026 season opener</li>
-        </ul>
+      <div class="monthly-carousel" id="carousel-kids">
+        <div class="carousel-track">
+          <!-- SLIDE 1: adicionar img src abaixo -->
+          <div class="carousel-slide">
+            <div class="carousel-img-wrap">
+              <img src="" alt="Pit Stop Box — Design 1" class="carousel-img" onerror="this.parentElement.innerHTML='<div class=carousel-placeholder>📸<br><span>Add photo</span></div>'">
+            </div>
+          </div>
+          <!-- SLIDE 2 -->
+          <div class="carousel-slide">
+            <div class="carousel-img-wrap">
+              <img src="" alt="Pit Stop Box — Design 2" class="carousel-img" onerror="this.parentElement.innerHTML='<div class=carousel-placeholder>📸<br><span>Add photo</span></div>'">
+            </div>
+          </div>
+          <!-- SLIDE 3 -->
+          <div class="carousel-slide">
+            <div class="carousel-img-wrap">
+              <img src="" alt="Pit Stop Box — Design 3" class="carousel-img" onerror="this.parentElement.innerHTML='<div class=carousel-placeholder>📸<br><span>Add photo</span></div>'">
+            </div>
+          </div>
+        </div>
+        <div class="carousel-controls">
+          <button class="carousel-btn prev" onclick="carouselMove('carousel-kids', -1)">&#8592;</button>
+          <div class="carousel-dots" id="dots-kids">
+            <span class="carousel-dot active" onclick="carouselGo('carousel-kids',0)"></span>
+            <span class="carousel-dot" onclick="carouselGo('carousel-kids',1)"></span>
+            <span class="carousel-dot" onclick="carouselGo('carousel-kids',2)"></span>
+          </div>
+          <button class="carousel-btn next" onclick="carouselMove('carousel-kids', 1)">&#8594;</button>
+        </div>
       </div>
     </div>
 
-    <div class="past-card">
-      <div class="past-card-img">
-        <div class="past-card-img-placeholder">🏎️</div>
-        <div class="past-card-img-text">Photo coming soon</div>
-        <div class="past-coming-soon"><span>Coming May 2026</span></div>
+    <!-- BOX: RACE CREW -->
+    <div class="monthly-box-col">
+      <div class="monthly-box-label">
+        <span class="monthly-box-tag">Race Crew Box · Ages 11–14</span>
       </div>
-      <div class="past-card-body">
-        <p class="past-month">Box 002 · May 2026</p>
-        <h3>Box 002</h3>
-        <p>Three new designs. A new race. A new note. Subscribers will know — everyone else will have to wait until it ships.</p>
-        <ul class="past-items">
-          <li>3 new surprise designs</li>
-          <li>Note from Enrique</li>
-          <li>May race update</li>
-        </ul>
+      <div class="monthly-carousel" id="carousel-teens">
+        <div class="carousel-track">
+          <div class="carousel-slide">
+            <div class="carousel-img-wrap">
+              <img src="" alt="Race Crew Box — Design 1" class="carousel-img" onerror="this.parentElement.innerHTML='<div class=carousel-placeholder>📸<br><span>Add photo</span></div>'">
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <div class="carousel-img-wrap">
+              <img src="" alt="Race Crew Box — Design 2" class="carousel-img" onerror="this.parentElement.innerHTML='<div class=carousel-placeholder>📸<br><span>Add photo</span></div>'">
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <div class="carousel-img-wrap">
+              <img src="" alt="Race Crew Box — Design 3" class="carousel-img" onerror="this.parentElement.innerHTML='<div class=carousel-placeholder>📸<br><span>Add photo</span></div>'">
+            </div>
+          </div>
+        </div>
+        <div class="carousel-controls">
+          <button class="carousel-btn prev" onclick="carouselMove('carousel-teens', -1)">&#8592;</button>
+          <div class="carousel-dots" id="dots-teens">
+            <span class="carousel-dot active" onclick="carouselGo('carousel-teens',0)"></span>
+            <span class="carousel-dot" onclick="carouselGo('carousel-teens',1)"></span>
+            <span class="carousel-dot" onclick="carouselGo('carousel-teens',2)"></span>
+          </div>
+          <button class="carousel-btn next" onclick="carouselMove('carousel-teens', 1)">&#8594;</button>
+        </div>
       </div>
     </div>
 
-    <div class="past-card">
-      <div class="past-card-img">
-        <div class="past-card-img-placeholder">🏁</div>
-        <div class="past-card-img-text">Photo coming soon</div>
-        <div class="past-coming-soon"><span>Coming June 2026</span></div>
+    <!-- BOX: DESK CREW -->
+    <div class="monthly-box-col">
+      <div class="monthly-box-label">
+        <span class="monthly-box-tag">Desk Crew Box · Adults</span>
       </div>
-      <div class="past-card-body">
-        <p class="past-month">Box 003 · June 2026</p>
-        <h3>Box 003</h3>
-        <p>This page grows every month. Subscribe now and you'll receive every box before it's ever shown here.</p>
-        <ul class="past-items">
-          <li>3 new surprise designs</li>
-          <li>Note from Enrique</li>
-          <li>June race update</li>
-        </ul>
+      <div class="monthly-carousel" id="carousel-desk">
+        <div class="carousel-track">
+          <div class="carousel-slide">
+            <div class="carousel-img-wrap">
+              <img src="" alt="Desk Crew Box — Design 1" class="carousel-img" onerror="this.parentElement.innerHTML='<div class=carousel-placeholder>📸<br><span>Add photo</span></div>'">
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <div class="carousel-img-wrap">
+              <img src="" alt="Desk Crew Box — Design 2" class="carousel-img" onerror="this.parentElement.innerHTML='<div class=carousel-placeholder>📸<br><span>Add photo</span></div>'">
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <div class="carousel-img-wrap">
+              <img src="" alt="Desk Crew Box — Design 3" class="carousel-img" onerror="this.parentElement.innerHTML='<div class=carousel-placeholder>📸<br><span>Add photo</span></div>'">
+            </div>
+          </div>
+        </div>
+        <div class="carousel-controls">
+          <button class="carousel-btn prev" onclick="carouselMove('carousel-desk', -1)">&#8592;</button>
+          <div class="carousel-dots" id="dots-desk">
+            <span class="carousel-dot active" onclick="carouselGo('carousel-desk',0)"></span>
+            <span class="carousel-dot" onclick="carouselGo('carousel-desk',1)"></span>
+            <span class="carousel-dot" onclick="carouselGo('carousel-desk',2)"></span>
+          </div>
+          <button class="carousel-btn next" onclick="carouselMove('carousel-desk', 1)">&#8594;</button>
+        </div>
       </div>
     </div>
+
   </div>
 
   <div class="past-cta">
-    <p>This archive fills up every month. <strong>Subscribers always see it first.</strong> Every box is documented here after it ships — the products, the race result, Enrique's note. A living record of the season.</p>
-    <a href="#boxes" class="btn btn-primary">Subscribe to be first →</a>
+    <p>Every month, 3 new designs across all boxes. <strong>Subscribers always get theirs before anyone sees what's inside.</strong></p>
+    <a href="#boxes" class="btn btn-primary">Subscribe now →</a>
   </div>
 </section>
 
@@ -779,7 +943,7 @@ footer { background: var(--black); border-top: 1px solid var(--grey2); padding: 
     <div class="inside-num">01</div>
     <div class="inside-content">
       <h3>3 Surprise 3D-Printed Objects</h3>
-      <p>Printed by Enrique on his Bambu P1S — 4 colours per object, no painting, no assembly. Each month brings 3 completely new designs. Nobody knows what's coming until the box arrives. That anticipation is part of the experience.</p>
+      <p>Printed by Enrique on his Bambu P1S — no painting, no assembly. Each month brings 3 completely new designs, each one colourful and unique. Nobody knows what's coming until the box arrives. That anticipation is part of the experience.</p>
     </div>
   </div>
   <div class="inside-row">
@@ -898,17 +1062,17 @@ footer { background: var(--black); border-top: 1px solid var(--grey2); padding: 
       <tr>
         <td><strong>Race Crew Box</strong></td>
         <td>Ages 11–14</td>
-        <td class="price-col">£19.99</td>
-        <td>£215.89 <span class="tag">Save £24</span></td>
-        <td class="gift-price">£26.99</td>
+        <td class="price-col">£14.99</td>
+        <td>£161.90 <span class="tag">Save £18</span></td>
+        <td class="gift-price">£19.99</td>
         <td>Race entries · tyres · testing days</td>
       </tr>
       <tr>
         <td><strong>Desk Crew Box</strong></td>
         <td>Adults</td>
-        <td class="price-col">£24.99</td>
-        <td>£269.89 <span class="tag">Save £30</span></td>
-        <td class="gift-price">£32.99</td>
+        <td class="price-col">£14.99</td>
+        <td>£161.90 <span class="tag">Save £18</span></td>
+        <td class="gift-price">£19.99</td>
         <td>Race entries · tyres · testing days</td>
       </tr>
     </tbody>
@@ -980,11 +1144,11 @@ footer { background: var(--black); border-top: 1px solid var(--grey2); padding: 
         </a>
         <a href="https://jeandrift.gumroad.com/l/race-crew-box" target="_blank" class="gumroad-box" style="border-color:var(--green);">
           <div class="gb-info"><span class="gb-name">Race Crew Box</span><span class="gb-age">Ages 11–14 · Teens · Most Popular</span></div>
-          <div style="display:flex;align-items:center;gap:20px;"><span class="gb-price">£19.99<span style="font-size:13px;color:var(--muted);font-family:var(--font-mono)">/mo</span></span><span class="gb-arrow">→</span></div>
+          <div style="display:flex;align-items:center;gap:20px;"><span class="gb-price">£14.99<span style="font-size:13px;color:var(--muted);font-family:var(--font-mono)">/mo</span></span><span class="gb-arrow">→</span></div>
         </a>
         <a href="https://jeandrift.gumroad.com/l/desk-crew-box" target="_blank" class="gumroad-box">
           <div class="gb-info"><span class="gb-name">Desk Crew Box</span><span class="gb-age">Adults · Desk & Office</span></div>
-          <div style="display:flex;align-items:center;gap:20px;"><span class="gb-price">£24.99<span style="font-size:13px;color:var(--muted);font-family:var(--font-mono)">/mo</span></span><span class="gb-arrow">→</span></div>
+          <div style="display:flex;align-items:center;gap:20px;"><span class="gb-price">£14.99<span style="font-size:13px;color:var(--muted);font-family:var(--font-mono)">/mo</span></span><span class="gb-arrow">→</span></div>
         </a>
       </div>
       <p class="gumroad-note">Secure monthly payment via Gumroad · Cancel any time<br>UK delivery only at launch · First box ships within 7 days</p>
@@ -1056,6 +1220,45 @@ function handleBrandEnquiry(btn) {
 function handleBrandSubmit(btn) {
   handleBrandEnquiry(btn);
 }
+
+// CAROUSEL
+const carouselState = {};
+function carouselInit(id) {
+  if (!carouselState[id]) carouselState[id] = 0;
+}
+function carouselMove(id, dir) {
+  carouselInit(id);
+  const el = document.getElementById(id);
+  const slides = el.querySelectorAll('.carousel-slide');
+  carouselState[id] = (carouselState[id] + dir + slides.length) % slides.length;
+  carouselRender(id, slides.length);
+}
+function carouselGo(id, index) {
+  carouselInit(id);
+  const el = document.getElementById(id);
+  const slides = el.querySelectorAll('.carousel-slide');
+  carouselState[id] = index;
+  carouselRender(id, slides.length);
+}
+function carouselRender(id, total) {
+  const el = document.getElementById(id);
+  const idx = carouselState[id];
+  el.querySelectorAll('.carousel-slide').forEach((s, i) => {
+    s.style.transform = 'translateX(' + ((i - idx) * 100) + '%)';
+  });
+  const dotsEl = document.getElementById('dots-' + id.replace('carousel-', ''));
+  if (dotsEl) dotsEl.querySelectorAll('.carousel-dot').forEach((d, i) => {
+    d.classList.toggle('active', i === idx);
+  });
+}
+// Init all carousels on load
+document.addEventListener('DOMContentLoaded', () => {
+  ['carousel-kids','carousel-teens','carousel-desk'].forEach(id => {
+    carouselInit(id);
+    carouselRender(id, 3);
+  });
+});
+
 </script>
 </body>
 </html>
