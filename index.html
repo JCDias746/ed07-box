@@ -484,29 +484,18 @@ footer { background: var(--black); border-top: 1px solid var(--grey2); padding: 
 }
 .carousel-track {
   display: flex;
-  overflow: hidden;
-  position: relative;
-}
-.carousel-track {
-  display: flex;
-  overflow: hidden;
-  position: relative;
   width: 100%;
+  overflow: hidden;
 }
 .carousel-slide {
   min-width: 100%;
   flex-shrink: 0;
-  transition: transform 0.4s ease;
 }
 .carousel-img-wrap {
   width: 100%;
-  height: 340px;
+  height: 320px;
+  background: #1a1a1a;
   overflow: hidden;
-  background: var(--grey2);
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .carousel-img {
   width: 100%;
@@ -1222,28 +1211,32 @@ function carouselInit(id) {
 function carouselMove(id, dir) {
   carouselInit(id);
   const el = document.getElementById(id);
-  const slides = el.querySelectorAll('.carousel-slide');
-  carouselState[id] = (carouselState[id] + dir + slides.length) % slides.length;
-  carouselRender(id, slides.length);
+  const total = el.querySelectorAll('.carousel-slide').length;
+  carouselState[id] = (carouselState[id] + dir + total) % total;
+  carouselRender(id);
 }
 function carouselGo(id, index) {
   carouselInit(id);
-  const el = document.getElementById(id);
-  const slides = el.querySelectorAll('.carousel-slide');
   carouselState[id] = index;
-  carouselRender(id, slides.length);
+  carouselRender(id);
 }
-function carouselRender(id, total) {
+function carouselRender(id) {
   const el = document.getElementById(id);
   const idx = carouselState[id];
   const track = el.querySelector('.carousel-track');
-  if (track) {
-    track.style.transform = 'translateX(-' + (idx * 100) + '%)';
-    track.style.transition = 'transform 0.4s ease';
-  }
-  el.querySelectorAll('.carousel-slide').forEach((s, i) => {
-    s.style.transform = '';
+  if (track) track.style.transform = 'translateX(-' + (idx * 100) + '%)';
+  const dotsId = 'dots-' + id.replace('carousel-', '');
+  const dotsEl = document.getElementById(dotsId);
+  if (dotsEl) dotsEl.querySelectorAll('.carousel-dot').forEach((d, i) => {
+    d.classList.toggle('active', i === idx);
   });
+}
+document.addEventListener('DOMContentLoaded', () => {
+  ['carousel-kids','carousel-teens','carousel-desk'].forEach(id => {
+    carouselInit(id);
+    carouselRender(id);
+  });
+});
   const dotsEl = document.getElementById('dots-' + id.replace('carousel-', ''));
   if (dotsEl) dotsEl.querySelectorAll('.carousel-dot').forEach((d, i) => {
     d.classList.toggle('active', i === idx);
