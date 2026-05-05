@@ -482,10 +482,6 @@ footer { background: var(--black); border-top: 1px solid var(--grey2); padding: 
 .monthly-carousel {
   padding: 0;
   width: 100%;
-}
-.monthly-carousel {
-  padding: 0;
-  width: 100%;
   overflow: hidden;
 }
 .carousel-track {
@@ -499,14 +495,15 @@ footer { background: var(--black); border-top: 1px solid var(--grey2); padding: 
 }
 .carousel-img-wrap {
   width: 100%;
-  height: 320px;
+  height: 380px;
   background: #1a1a1a;
   overflow: hidden;
 }
 .carousel-img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
+  object-position: center top;
   display: block;
 }
 .carousel-placeholder {
