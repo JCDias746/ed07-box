@@ -348,6 +348,12 @@ body.nav-solid .nav{background:rgba(9,11,10,.95);border-bottom:1px solid var(--c
 .pullquote{text-align:center;padding:clamp(64px,9vw,120px) var(--gutter);border-top:1px solid var(--carbon-line)}
 .pullquote .pq{font-family:var(--fdisp);font-weight:800;text-transform:uppercase;font-size:clamp(2.2rem,6vw,4.4rem);line-height:1.03;max-width:22ch;margin:0 auto}
 .pullquote .pqs{margin-top:16px;color:var(--ink-soft);font-size:clamp(1.05rem,1.6vw,1.3rem)}
+.about-gallery .tile{position:relative;aspect-ratio:1;background:var(--carbon);border:1px solid var(--carbon-line);display:grid;place-items:center;overflow:hidden;transition:border-color .25s}
+.about-gallery .tile:hover{border-color:var(--lime)}
+.about-gallery .tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.about-gallery .tile .ph{display:flex;flex-direction:column;align-items:center;gap:10px;color:var(--ink-soft);padding:14px;text-align:center}
+.about-gallery .tile .ph svg{width:26px;height:26px;opacity:.5}
+.about-gallery .tile .ph .lbl{font-family:var(--fdisp);font-weight:700;text-transform:uppercase;font-size:.95rem;letter-spacing:.03em;line-height:1.1}
 
 /* ---------- mobile hero ---------- */
 @media(max-width:600px){

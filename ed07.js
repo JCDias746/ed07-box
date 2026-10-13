@@ -71,6 +71,12 @@
       "ab.pull2":"That is what Built, Not Given means.",
       "ab.end.t":"This is just the start line.",
       "ab.end.p":"The dream is big, but the plan is real. Karting now, F4 in a few years, and step by step to Formula 1. Watch it happen, wear the movement, or build it with us.",
+      "ab.gal.kicker":"Off the track",
+      "ab.gal.t":"Just a kid, really.",
+      "ab.gal.lede":"A big dream does not mean a strange life. It means a full one.",
+      "ab.gal.1":"With his sister Laura","ab.gal.2":"On the pitch","ab.gal.3":"Game night",
+      "ab.gal.4":"In the 3D workshop","ab.gal.5":"Family","ab.gal.6":"Just a kid",
+      "ab.gal.note":"High-resolution photos coming soon.",
 
       "foot.follow":"Follow the journey","foot.rights":"All rights reserved."
     },
@@ -141,6 +147,12 @@
       "ab.pull2":"É isso que Built, Not Given quer dizer.",
       "ab.end.t":"Isto é só a linha de largada.",
       "ab.end.p":"O sonho é grande, mas o plano é real. Kart agora, F4 em alguns anos, e passo a passo até a Fórmula 1. Acompanhe, vista o movimento, ou construa com a gente.",
+      "ab.gal.kicker":"Fora da pista",
+      "ab.gal.t":"No fundo, só uma criança.",
+      "ab.gal.lede":"Um sonho grande não significa uma vida estranha. Significa uma vida cheia.",
+      "ab.gal.1":"Com a irmã, Laura","ab.gal.2":"No futebol","ab.gal.3":"Hora do videogame",
+      "ab.gal.4":"Na oficina 3D","ab.gal.5":"Família","ab.gal.6":"Só uma criança",
+      "ab.gal.note":"Fotos em alta em breve.",
 
       "foot.follow":"Acompanhe a jornada","foot.rights":"Todos os direitos reservados."
     }
