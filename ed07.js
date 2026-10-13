@@ -60,6 +60,18 @@
       "rc.live.btn":"Watch live on YouTube","rc.watch":"Watch on YouTube","rc.soon":"Coming soon",
       "rc.note":"Videos go live as the season films. Subscribe on YouTube so you don't miss a lap.",
 
+      "ab.h1":"Ten years old. One plan: Formula 1.",
+      "ab.sub":"This is Enrique. A normal kid with a school bag, a cat and a dream most people would call impossible. He decided to build it anyway.",
+      "ab.b1.t":"A normal life, lived on purpose.",
+      "ab.b1.p":"Enrique goes to school, does his homework and plays like any ten-year-old. The difference is the focus. Every early morning, every cold training session, every lap is one more brick in the same plan: Formula 1.",
+      "ab.b2.t":"He funds the dream himself.",
+      "ab.b2.p":"Karting is expensive, really expensive. So Enrique did something about it. He started printing and selling little toys, keychains and fidget toys to his friends at school. What began on a school desk is now a small shop online, and every sale helps pay for the next race.",
+      "ab.b2.btn":"Visit the shop",
+      "ab.pull":"He didn't wait to be given anything.",
+      "ab.pull2":"That is what Built, Not Given means.",
+      "ab.end.t":"This is just the start line.",
+      "ab.end.p":"The dream is big, but the plan is real. Karting now, F4 in a few years, and step by step to Formula 1. Watch it happen, wear the movement, or build it with us.",
+
       "foot.follow":"Follow the journey","foot.rights":"All rights reserved."
     },
     pt:{
@@ -117,6 +129,18 @@
       "rc.live.t":"A gente vai ao vivo","rc.live.d":"Fins de semana de corrida, treinos e perguntas, ao vivo no YouTube.",
       "rc.live.btn":"Assistir ao vivo no YouTube","rc.watch":"Assistir no YouTube","rc.soon":"Em breve",
       "rc.note":"Os vídeos entram conforme a temporada é filmada. Inscreva-se no YouTube pra não perder nenhuma volta.",
+
+      "ab.h1":"Dez anos. Um plano: a Fórmula 1.",
+      "ab.sub":"Esse é o Enrique. Um menino normal, com mochila, um gato e um sonho que a maioria chamaria de impossível. Ele decidiu construir mesmo assim.",
+      "ab.b1.t":"Uma vida normal, vivida com propósito.",
+      "ab.b1.p":"O Enrique vai pra escola, faz a lição e brinca como qualquer criança de dez anos. A diferença é o foco. Cada manhã cedo, cada treino no frio, cada volta é mais um tijolo no mesmo plano: a Fórmula 1.",
+      "ab.b2.t":"Ele mesmo banca o sonho.",
+      "ab.b2.p":"Kart é caro, muito caro. Então o Enrique fez algo a respeito. Começou a imprimir e vender brinquedinhos, chaveiros e fidget toys pros amigos na escola. O que começou numa carteira de escola hoje é uma lojinha online, e cada venda ajuda a pagar a próxima corrida.",
+      "ab.b2.btn":"Conheça a loja",
+      "ab.pull":"Ele não esperou ninguém dar nada.",
+      "ab.pull2":"É isso que Built, Not Given quer dizer.",
+      "ab.end.t":"Isto é só a linha de largada.",
+      "ab.end.p":"O sonho é grande, mas o plano é real. Kart agora, F4 em alguns anos, e passo a passo até a Fórmula 1. Acompanhe, vista o movimento, ou construa com a gente.",
 
       "foot.follow":"Acompanhe a jornada","foot.rights":"Todos os direitos reservados."
     }
@@ -197,7 +221,18 @@
     });
   }
 
+  function initNavAbout(){
+    document.querySelectorAll(".nav .links").forEach(function(links){
+      if(links.querySelector('a[href="about.html"]')) return;
+      var home=links.querySelector('a[href="index.html"]');
+      var a=document.createElement("a");
+      a.href="about.html"; a.setAttribute("data-i18n","nav.about"); a.textContent="About";
+      if(location.pathname.split("/").pop()==="about.html") a.setAttribute("aria-current","page");
+      if(home&&home.nextSibling) links.insertBefore(a, home.nextSibling); else if(home) links.appendChild(a);
+    });
+  }
+
   document.addEventListener("DOMContentLoaded",function(){
-    initFooter(); initLang(); initNav(); initReveal();
+    initNavAbout(); initFooter(); initLang(); initNav(); initReveal();
   });
 })();

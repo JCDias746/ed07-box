@@ -342,6 +342,13 @@ body.nav-solid .nav{background:rgba(9,11,10,.95);border-bottom:1px solid var(--c
   .hero-photo img{object-position:65% 50%}
 }
 
+/* ---------- about ---------- */
+.hero-short{min-height:66svh}
+.hero-short h1{font-size:clamp(2.3rem,5.2vw,4.4rem);text-transform:none;max-width:18ch;line-height:1.02}
+.pullquote{text-align:center;padding:clamp(64px,9vw,120px) var(--gutter);border-top:1px solid var(--carbon-line)}
+.pullquote .pq{font-family:var(--fdisp);font-weight:800;text-transform:uppercase;font-size:clamp(2.2rem,6vw,4.4rem);line-height:1.03;max-width:22ch;margin:0 auto}
+.pullquote .pqs{margin-top:16px;color:var(--ink-soft);font-size:clamp(1.05rem,1.6vw,1.3rem)}
+
 /* ---------- mobile hero ---------- */
 @media(max-width:600px){
   .hero-photo img{object-position:56% 36%}
