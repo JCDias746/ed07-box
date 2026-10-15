@@ -142,6 +142,7 @@
 <script>
 (function(){
   var MAIL="mailto:jeand746@gmail.com?subject=ED07%20Partnership%20-%20";
+  var FORM="https://docs.google.com/forms/d/e/1FAIpQLSci-Th3wKCLkBuUNWcXpfDrxZ-hd8Ldzfl_ARZfNHbdilpulg/viewform?usp=pp_url&entry.1799192166=";
   var L={
     en:{month:"/ month",season:"/ season",seasononly:"Season only",choose:"Choose",or:"or"},
     pt:{month:"/ mês",season:"/ temporada",seasononly:"Só temporada",choose:"Escolher",or:"ou"}
@@ -181,7 +182,7 @@
       return '<div class="tier'+(T.feat?' feat':'')+'">'+badge+
         '<div class="tname">'+esc(T.key)+'</div>'+price+
         '<ul>'+lis+'</ul>'+
-        '<a class="btn btn-primary" href="'+MAIL+encodeURIComponent(T.key)+'">'+t.choose+' '+esc(T.key)+'</a></div>';
+        '<a class="btn btn-primary" href="'+FORM+encodeURIComponent(T.key)+'" target="_blank" rel="noopener">'+t.choose+' '+esc(T.key)+'</a></div>';
     }).join("");
     var al=document.getElementById("addonList");
     if(al) al.innerHTML = ADDONS[lg].map(function(a){return '<li>'+esc(a)+'</li>';}).join("");
