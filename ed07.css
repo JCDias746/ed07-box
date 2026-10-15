@@ -205,7 +205,8 @@ body.nav-solid .nav{background:rgba(9,11,10,.95);border-bottom:1px solid var(--c
 .pp-hero .acts{margin-top:30px;display:flex;gap:14px;flex-wrap:wrap}
 
 .tiers{padding:clamp(54px,8vw,96px) 0}
-.tier-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(214px,1fr));gap:14px;margin-top:28px}
+.packs-top{margin-top:18px}
+.tier-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(214px,1fr));gap:14px;margin-top:22px}
 .tier{background:var(--carbon);border:1px solid var(--carbon-line);border-radius:14px;padding:22px 20px;display:flex;flex-direction:column}
 .tier.feat{border-color:var(--lime)}
 .tier .badge{align-self:flex-start;font-size:10px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#06210A;background:var(--lime);padding:3px 9px;border-radius:999px;margin-bottom:10px}
