@@ -19,7 +19,7 @@
       "home.shop.d":"Wear the movement. Every piece pays for the next race.",
       "home.bng.k":"Built, Not Given",
       "home.bng.t":"He funds the dream himself.",
-      "home.bng.p1":"Karting costs more than most families can carry, and nobody wrote this one a cheque. A ten-year-old could have quit. Instead, Enrique got to work. He prints and sells his own 3D toys, dragons and keychains, and the ED07 hoodies and tees carry the movement. What started on a school desk is a real business, and every single sale buys another lap toward Formula 1.",
+      "home.bng.p1":"Karting costs more than most families can carry, and nobody wrote this one a cheque. A ten-year-old could have quit. Instead, Enrique got to work. He prints and sells his own 3D toys, dragons and keychains, and the Built, Not Given hoodies and tees take it further. What started on a school desk is a real business, and every single sale buys another lap toward Formula 1.",
       "home.bng.p2":"Nobody handed him this. He is earning it, one lap and one sale at a time. That is what Built, Not Given means.",
       "home.bng.btn":"Visit the shop",
 
@@ -101,7 +101,7 @@
       "home.shop.d":"Vista o movimento. Cada peça paga a próxima corrida.",
       "home.bng.k":"Built, Not Given",
       "home.bng.t":"Ele mesmo banca o sonho.",
-      "home.bng.p1":"Kart custa mais do que a maioria das famílias aguenta, e ninguém passou um cheque pra essa. Um menino de dez anos poderia ter desistido. Em vez disso, o Enrique foi à luta. Ele imprime e vende os próprios brinquedos 3D, dragões e chaveiros, e os moletons e camisetas ED07 carregam o movimento. O que começou numa carteira de escola virou um negócio de verdade, e cada venda compra mais uma volta rumo à Fórmula 1.",
+      "home.bng.p1":"Kart custa mais do que a maioria das famílias aguenta, e ninguém passou um cheque pra essa. Um menino de dez anos poderia ter desistido. Em vez disso, o Enrique foi à luta. Ele imprime e vende os próprios brinquedos 3D, dragões e chaveiros, e os moletons e camisetas Built, Not Given levam isso adiante. O que começou numa carteira de escola virou um negócio de verdade, e cada venda compra mais uma volta rumo à Fórmula 1.",
       "home.bng.p2":"Ninguém deu nada de bandeja. Ele está conquistando, uma volta e uma venda de cada vez. É isso que Built, Not Given significa.",
       "home.bng.btn":"Ver a loja",
 
