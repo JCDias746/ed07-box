@@ -75,8 +75,8 @@
       "ab.gal.kicker":"Off the track",
       "ab.gal.t":"Just a kid, really.",
       "ab.gal.lede":"A big dream does not mean a strange life. It means a full one.",
-      "ab.gal.1":"With his sister Laura","ab.gal.2":"In the workshop","ab.gal.3":"Family bike ride",
-      "ab.gal.4":"In the 3D workshop","ab.gal.5":"Family","ab.gal.6":"Just a kid",
+      "ab.gal.1":"With his sister Laura","ab.gal.2":"On the climbing wall","ab.gal.3":"Family bike ride",
+      "ab.gal.4":"Ice cream stop","ab.gal.5":"Family","ab.gal.6":"With mum",
       "ab.gal.note":"High-resolution photos coming soon.",
 
       "foot.follow":"Follow the journey","foot.rights":"All rights reserved."
@@ -152,8 +152,8 @@
       "ab.gal.kicker":"Fora da pista",
       "ab.gal.t":"No fundo, só uma criança.",
       "ab.gal.lede":"Um sonho grande não significa uma vida estranha. Significa uma vida cheia.",
-      "ab.gal.1":"Com a irmã, Laura","ab.gal.2":"Na oficina","ab.gal.3":"Passeio de bike em família",
-      "ab.gal.4":"Na oficina 3D","ab.gal.5":"Família","ab.gal.6":"Só uma criança",
+      "ab.gal.1":"Com a irmã, Laura","ab.gal.2":"Na escalada","ab.gal.3":"Passeio de bike em família",
+      "ab.gal.4":"Hora do sorvete","ab.gal.5":"Família","ab.gal.6":"Com a mãe",
       "ab.gal.note":"Fotos em alta em breve.",
 
       "foot.follow":"Acompanhe a jornada","foot.rights":"Todos os direitos reservados."
