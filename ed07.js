@@ -19,7 +19,7 @@
       "home.shop.d":"Wear the movement. Every piece pays for the next race.",
       "home.bng.k":"Built, Not Given",
       "home.bng.t":"He funds the dream himself.",
-      "home.bng.p1":"Karting costs more than most families can carry, and nobody wrote this one a cheque. A ten-year-old could have quit. Instead, Enrique got to work. He designs and 3D-prints his own toys, dragons and keychains, and the ED07 hoodies and tees carry the movement. What started on a school desk is a real business, and every single sale buys another lap toward Formula 1.",
+      "home.bng.p1":"Karting costs more than most families can carry, and nobody wrote this one a cheque. A ten-year-old could have quit. Instead, Enrique got to work. He prints and sells his own 3D toys, dragons and keychains, and the ED07 hoodies and tees carry the movement. What started on a school desk is a real business, and every single sale buys another lap toward Formula 1.",
       "home.bng.p2":"Nobody handed him this. He is earning it, one lap and one sale at a time. That is what Built, Not Given means.",
       "home.bng.btn":"Visit the shop",
 
@@ -41,7 +41,7 @@
       "wear.title":"Hoodies & Tees",
       "wear.desc":"Black and white hoodies and tees. T07 on the front, Built, Not Given across the back. Worn by a family who means it.",
       "print.title":"3D Prints",
-      "print.desc":"Dragons, keychains and limited editions, designed and printed by Enrique himself. Own a piece of the climb.",
+      "print.desc":"Dragons, keychains and limited editions, printed by Enrique himself. Own a piece of the climb.",
       "shop.btn":"Shop on Etsy",
       "shop.note":"Printed and shipped on demand.",
 
@@ -101,7 +101,7 @@
       "home.shop.d":"Vista o movimento. Cada peça paga a próxima corrida.",
       "home.bng.k":"Built, Not Given",
       "home.bng.t":"Ele mesmo banca o sonho.",
-      "home.bng.p1":"Kart custa mais do que a maioria das famílias aguenta, e ninguém passou um cheque pra essa. Um menino de dez anos poderia ter desistido. Em vez disso, o Enrique foi à luta. Ele cria e imprime em 3D os próprios brinquedos, dragões e chaveiros, e os moletons e camisetas ED07 carregam o movimento. O que começou numa carteira de escola virou um negócio de verdade, e cada venda compra mais uma volta rumo à Fórmula 1.",
+      "home.bng.p1":"Kart custa mais do que a maioria das famílias aguenta, e ninguém passou um cheque pra essa. Um menino de dez anos poderia ter desistido. Em vez disso, o Enrique foi à luta. Ele imprime e vende os próprios brinquedos 3D, dragões e chaveiros, e os moletons e camisetas ED07 carregam o movimento. O que começou numa carteira de escola virou um negócio de verdade, e cada venda compra mais uma volta rumo à Fórmula 1.",
       "home.bng.p2":"Ninguém deu nada de bandeja. Ele está conquistando, uma volta e uma venda de cada vez. É isso que Built, Not Given significa.",
       "home.bng.btn":"Ver a loja",
 
@@ -123,7 +123,7 @@
       "wear.title":"Moletons e Camisetas",
       "wear.desc":"Moletons e camisetas preto e branco. T07 na frente, Built, Not Given nas costas. Vestido por uma família que leva a sério.",
       "print.title":"Impressões 3D",
-      "print.desc":"Dragões, chaveiros e edições limitadas, desenhados e impressos pelo próprio Enrique. Tenha um pedaço da subida.",
+      "print.desc":"Dragões, chaveiros e edições limitadas, impressos pelo próprio Enrique. Tenha um pedaço da subida.",
       "shop.btn":"Comprar na Etsy",
       "shop.note":"Impresso e enviado sob demanda.",
 
