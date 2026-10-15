@@ -13,21 +13,21 @@
       "home.id":"Honda Cadet 200.  Hastings, England.  Road to Formula 1.",
       "home.see":"See the journey",
       "home.next":"Where to next",
-      "home.journey.d":"Pieces of the journey, object by object.",
-      "home.race.d":"Every race, filmed. Watch it on YouTube.",
+      "home.journey.d":"The paddock, the workshop, the real story in photos.",
+      "home.race.d":"The best clips from the track, on Instagram.",
       "home.partner.d":"Put your brand inside a real story.",
       "home.shop.d":"Wear the movement. Hoodies, tees and 3D prints.",
 
-      "jr.kicker":"The artefacts",
-      "jr.title":"Pieces of the Journey.",
-      "jr.lede":"Every object tells a story. Each one photographed like a museum exhibit.",
+      "jr.kicker":"In the workshop",
+      "jr.title":"He builds it himself.",
+      "jr.lede":"Karting is engineering. Enrique wraps his own kart and gets his hands on the parts, learning the machine inch by inch.",
       "art.1":"First helmet","art.2":"First gloves","art.3":"First race suit",
       "art.4":"First trophy","art.5":"First steering wheel","art.6":"First kart",
       "jr.note":"High-resolution photography of each piece is on its way.",
       "ev.kicker":"Trackside",
       "ev.title":"Life in the paddock.",
       "ev.lede":"Training, the garage, the race days. The grind behind the glory.",
-      "ev.note":"More photos from every race weekend, coming soon.",
+      "ev.note":"Shot across real race weekends.",
       "jr.cta":"The journey so far. Now follow it, race by race.",
       "jr.cta.btn":"Race Chapters",
 
@@ -43,7 +43,7 @@
       "partners.label":"Early partners",
       "p.hero":"You are not sponsoring a kart.",
       "p.hero2":"You are buying visibility.",
-      "p.lede":"ED07 is a growing media channel built around a ten-year-old racer. The kart pulls the crowd. What you buy is real exposure on our Instagram and YouTube, in front of families who follow every lap.",
+      "p.lede":"ED07 is a growing media channel built around a ten-year-old racer. The kart pulls the crowd. What you buy is real exposure on our Instagram, in front of families who follow every lap, with YouTube and TikTok on the way.",
       "p.see":"See the packages","p.talk":"Talk to us",
       "p.packages":"The packages",
       "p.month":"/ month","p.season":"/ season","p.seasononly":"Season only","p.choose":"Choose",
@@ -55,10 +55,11 @@
       "p.addons.t":"Add-ons for any package","p.addons.cta":"Ask us about add-ons",
       "p.cta.t":"Let's build something together.","p.cta.pack":"Download the pack",
 
-      "rc.lede":"Every race, filmed. The wins, the crashes, the comebacks. Watch it all on YouTube.",
-      "rc.live.t":"We go live","rc.live.d":"Race weekends, training and Q&A, streamed on YouTube.",
-      "rc.live.btn":"Watch live on YouTube","rc.watch":"Watch on YouTube","rc.soon":"Coming soon",
-      "rc.note":"Videos go live as the season films. Subscribe on YouTube so you don't miss a lap.",
+      "rc.h1":"The journey, in clips.",
+      "rc.lede":"The real moments from the track and the workshop, on Instagram. YouTube and TikTok are on the way.",
+      "rc.live.t":"Follow every lap","rc.live.d":"New clips from race weekends, training and the workshop, every week.",
+      "rc.live.btn":"Follow on Instagram","rc.watch":"Watch on Instagram","rc.soon":"Coming soon",
+      "rc.note":"More clips every week on Instagram. YouTube and TikTok are next.",
 
       "ab.h1":"Ten years old. One plan: Formula 1.",
       "ab.sub":"This is Enrique. A normal kid with a school bag, a cat and a dream most people would call impossible. He decided to build it anyway.",
@@ -74,7 +75,7 @@
       "ab.gal.kicker":"Off the track",
       "ab.gal.t":"Just a kid, really.",
       "ab.gal.lede":"A big dream does not mean a strange life. It means a full one.",
-      "ab.gal.1":"With his sister Laura","ab.gal.2":"On the pitch","ab.gal.3":"Game night",
+      "ab.gal.1":"With his sister Laura","ab.gal.2":"In the workshop","ab.gal.3":"Family bike ride",
       "ab.gal.4":"In the 3D workshop","ab.gal.5":"Family","ab.gal.6":"Just a kid",
       "ab.gal.note":"High-resolution photos coming soon.",
 
@@ -89,21 +90,21 @@
       "home.id":"Honda Cadet 200.  Hastings, Inglaterra.  Rumo à Fórmula 1.",
       "home.see":"Veja a jornada",
       "home.next":"Por onde seguir",
-      "home.journey.d":"Pedaços da jornada, objeto por objeto.",
-      "home.race.d":"Cada corrida, filmada. Assista no YouTube.",
+      "home.journey.d":"O paddock, a oficina, a história real em fotos.",
+      "home.race.d":"Os melhores clipes da pista, no Instagram.",
       "home.partner.d":"Coloque sua marca dentro de uma história real.",
       "home.shop.d":"Vista o movimento. Moletons, camisetas e impressões 3D.",
 
-      "jr.kicker":"Os artefatos",
-      "jr.title":"Pedaços da Jornada.",
-      "jr.lede":"Cada objeto conta uma história. Cada um fotografado como peça de museu.",
+      "jr.kicker":"Na oficina",
+      "jr.title":"Ele mesmo constrói.",
+      "jr.lede":"Kart é engenharia. O Enrique adesiva o próprio kart e põe a mão nas peças, aprendendo a máquina por dentro.",
       "art.1":"Primeiro capacete","art.2":"Primeiras luvas","art.3":"Primeiro macacão",
       "art.4":"Primeiro troféu","art.5":"Primeiro volante","art.6":"Primeiro kart",
       "jr.note":"As fotos em alta resolução de cada peça estão a caminho.",
       "ev.kicker":"Na pista",
       "ev.title":"A vida nos bastidores.",
       "ev.lede":"Treino, a garagem, os dias de corrida. O trabalho por trás do brilho.",
-      "ev.note":"Mais fotos de cada fim de semana de corrida, em breve.",
+      "ev.note":"Registrado em fins de semana de corrida reais.",
       "jr.cta":"A jornada até aqui. Agora acompanhe, corrida a corrida.",
       "jr.cta.btn":"Capítulos de Corrida",
 
@@ -119,7 +120,7 @@
       "partners.label":"Primeiros parceiros",
       "p.hero":"Você não está patrocinando um kart.",
       "p.hero2":"Você está comprando visibilidade.",
-      "p.lede":"A ED07 é um canal de mídia em crescimento construído em cima de um piloto de dez anos. O kart atrai o público. O que você compra é exposição real no nosso Instagram e YouTube, na frente de famílias que acompanham cada volta.",
+      "p.lede":"A ED07 é um canal de mídia em crescimento construído em cima de um piloto de dez anos. O kart atrai o público. O que você compra é exposição real no nosso Instagram, na frente de famílias que acompanham cada volta, com YouTube e TikTok a caminho.",
       "p.see":"Ver os pacotes","p.talk":"Fale com a gente",
       "p.packages":"Os pacotes",
       "p.month":"/ mês","p.season":"/ temporada","p.seasononly":"Só temporada","p.choose":"Escolher",
@@ -131,10 +132,11 @@
       "p.addons.t":"Add-ons para qualquer pacote","p.addons.cta":"Fale com a gente sobre add-ons",
       "p.cta.t":"Vamos construir algo juntos.","p.cta.pack":"Baixar o pack",
 
-      "rc.lede":"Cada corrida, filmada. As vitórias, as batidas, as viradas. Assista tudo no YouTube.",
-      "rc.live.t":"A gente vai ao vivo","rc.live.d":"Fins de semana de corrida, treinos e perguntas, ao vivo no YouTube.",
-      "rc.live.btn":"Assistir ao vivo no YouTube","rc.watch":"Assistir no YouTube","rc.soon":"Em breve",
-      "rc.note":"Os vídeos entram conforme a temporada é filmada. Inscreva-se no YouTube pra não perder nenhuma volta.",
+      "rc.h1":"A jornada, em clipes.",
+      "rc.lede":"Os momentos reais da pista e da oficina, no Instagram. YouTube e TikTok vêm por aí.",
+      "rc.live.t":"Acompanhe cada volta","rc.live.d":"Clipes novos dos fins de semana de corrida, treinos e oficina, toda semana.",
+      "rc.live.btn":"Seguir no Instagram","rc.watch":"Assistir no Instagram","rc.soon":"Em breve",
+      "rc.note":"Mais clipes toda semana no Instagram. YouTube e TikTok são os próximos.",
 
       "ab.h1":"Dez anos. Um plano: a Fórmula 1.",
       "ab.sub":"Esse é o Enrique. Um menino normal, com mochila, um gato e um sonho que a maioria chamaria de impossível. Ele decidiu construir mesmo assim.",
@@ -150,7 +152,7 @@
       "ab.gal.kicker":"Fora da pista",
       "ab.gal.t":"No fundo, só uma criança.",
       "ab.gal.lede":"Um sonho grande não significa uma vida estranha. Significa uma vida cheia.",
-      "ab.gal.1":"Com a irmã, Laura","ab.gal.2":"No futebol","ab.gal.3":"Hora do videogame",
+      "ab.gal.1":"Com a irmã, Laura","ab.gal.2":"Na oficina","ab.gal.3":"Passeio de bike em família",
       "ab.gal.4":"Na oficina 3D","ab.gal.5":"Família","ab.gal.6":"Só uma criança",
       "ab.gal.note":"Fotos em alta em breve.",
 
@@ -227,7 +229,7 @@
       var cta=document.createElement("div");
       cta.className="follow-cta";
       cta.innerHTML='<span class="fc-label" data-i18n="foot.follow">Follow the journey</span>'+
-        '<div class="fc-btns">'+fbtn(SOCIAL.instagram,SVG.instagram,"Instagram")+fbtn(SOCIAL.youtube,SVG.youtube,"YouTube")+fbtn(SOCIAL.tiktok,SVG.tiktok,"TikTok")+'</div>';
+        '<div class="fc-btns">'+fbtn(SOCIAL.instagram,SVG.instagram,"Instagram")+'</div>';
       f.insertBefore(cta,f.firstChild);
       var soc=f.querySelector(".footer-row .socials"); if(soc) soc.remove();
     });
