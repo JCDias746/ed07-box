@@ -121,6 +121,15 @@ body.nav-solid .nav{background:rgba(9,11,10,.95);border-bottom:1px solid var(--c
 @keyframes cue{0%,100%{transform:scaleY(.4);opacity:.4;transform-origin:top}50%{transform:scaleY(1);opacity:1}}
 
 /* ---------- home: where to next (index list) ---------- */
+.bng{padding:clamp(60px,9vw,120px) 0;border-top:1px solid var(--carbon-line)}
+.bng-h{font-family:var(--fdisp);font-weight:800;text-transform:uppercase;font-size:clamp(30px,6vw,60px);line-height:.98;color:var(--ink);margin:10px 0 clamp(26px,4vw,48px)}
+.bng-grid{display:grid;grid-template-columns:1fr .85fr;gap:clamp(28px,5vw,60px);align-items:center}
+.bng-copy p{color:var(--ink-soft);font-size:clamp(15px,1.5vw,18px);line-height:1.7;margin-bottom:16px;max-width:56ch}
+.bng-copy .btn{margin-top:12px}
+.bng-media{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.bng-media .bm{border-radius:14px;overflow:hidden;aspect-ratio:3/4;background:var(--carbon)}
+.bng-media .bm img{width:100%;height:100%;object-fit:cover}
+@media(max-width:760px){.bng-grid{grid-template-columns:1fr}.bng-media{max-width:440px}}
 .next{padding:clamp(60px,9vw,120px) 0;border-top:1px solid var(--carbon-line)}
 .sec-label{font-family:var(--fbody);font-weight:700;font-size:13px;letter-spacing:.14em;color:var(--lime);margin-bottom:28px}
 .idx{display:flex;flex-direction:column}

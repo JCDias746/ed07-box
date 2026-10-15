@@ -17,6 +17,11 @@
       "home.race.d":"The best clips from the track, on Instagram.",
       "home.partner.d":"Put your brand inside a real story.",
       "home.shop.d":"Wear the movement. Hoodies, tees and 3D prints.",
+      "home.bng.k":"Built, Not Given",
+      "home.bng.t":"He funds the dream himself.",
+      "home.bng.p1":"Karting is expensive. So Enrique did something about it. He designs and 3D-prints his own toys, dragons and keychains, and the ED07 hoodies and tees carry the movement. What started on a school desk is a small business, and every sale helps pay for the next race.",
+      "home.bng.p2":"That is what Built, Not Given means. Nobody handed him the dream. He is building it, one lap and one sale at a time.",
+      "home.bng.btn":"Visit the shop",
 
       "jr.kicker":"In the workshop",
       "jr.title":"He builds it himself.",
@@ -94,6 +99,11 @@
       "home.race.d":"Os melhores clipes da pista, no Instagram.",
       "home.partner.d":"Coloque sua marca dentro de uma história real.",
       "home.shop.d":"Vista o movimento. Moletons, camisetas e impressões 3D.",
+      "home.bng.k":"Built, Not Given",
+      "home.bng.t":"Ele mesmo banca o sonho.",
+      "home.bng.p1":"Kart é caro. Então o Enrique resolveu agir. Ele cria e imprime em 3D os próprios brinquedos, dragões e chaveiros, e os moletons e camisetas ED07 carregam o movimento. O que começou numa carteira de escola virou um pequeno negócio, e cada venda ajuda a pagar a próxima corrida.",
+      "home.bng.p2":"É isso que Built, Not Given significa. Ninguém deu o sonho de bandeja. Ele está construindo, uma volta e uma venda de cada vez.",
+      "home.bng.btn":"Ver a loja",
 
       "jr.kicker":"Na oficina",
       "jr.title":"Ele mesmo constrói.",
