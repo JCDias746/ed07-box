@@ -59,7 +59,7 @@
       "rc.lede":"The real moments from the track and the workshop, on Instagram. YouTube and TikTok are on the way.",
       "rc.live.t":"Follow every lap","rc.live.d":"New clips from race weekends, training and the workshop, every week.",
       "rc.live.btn":"Follow on Instagram","rc.watch":"Watch on Instagram","rc.soon":"Coming soon",
-      "rc.note":"More clips every week on Instagram. YouTube and TikTok are next.",
+      "rc.note":"New clips coming soon. Follow on Instagram so you don't miss them.",
 
       "ab.h1":"Ten years old. One plan: Formula 1.",
       "ab.sub":"This is Enrique. A normal kid with a school bag, a cat and a dream most people would call impossible. He decided to build it anyway.",
@@ -136,7 +136,7 @@
       "rc.lede":"Os momentos reais da pista e da oficina, no Instagram. YouTube e TikTok vêm por aí.",
       "rc.live.t":"Acompanhe cada volta","rc.live.d":"Clipes novos dos fins de semana de corrida, treinos e oficina, toda semana.",
       "rc.live.btn":"Seguir no Instagram","rc.watch":"Assistir no Instagram","rc.soon":"Em breve",
-      "rc.note":"Mais clipes toda semana no Instagram. YouTube e TikTok são os próximos.",
+      "rc.note":"Clipes novos em breve. Siga no Instagram pra não perder.",
 
       "ab.h1":"Dez anos. Um plano: a Fórmula 1.",
       "ab.sub":"Esse é o Enrique. Um menino normal, com mochila, um gato e um sonho que a maioria chamaria de impossível. Ele decidiu construir mesmo assim.",
