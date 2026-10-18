@@ -185,6 +185,7 @@ body.nav-solid .nav{background:rgba(9,11,10,.95);border-bottom:1px solid var(--c
 .prod p{margin-top:14px;color:var(--ink-soft);max-width:42ch}
 .prod .pnote{margin-top:14px;font-size:13px;color:var(--ink-soft)}
 .prod .btn{margin-top:24px}
+.soon-badge{display:inline-block;margin-top:24px;padding:14px 28px;border:1.5px solid var(--ink-soft);color:var(--ink-soft);border-radius:40px;font-family:var(--fdisp);font-weight:800;text-transform:uppercase;letter-spacing:.08em;font-size:15px}
 @media(max-width:860px){
   .prod{grid-template-columns:1fr;gap:22px}
   .prod.rev .prod-media{order:0}
